@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYFLIX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            font-family: "Montserrat", sans-serif;
+            ;
+        }
+
+        .main {
+            /* background-color: black; */
+            color: white;
+            background-image: url('https://image.inblog.dev/?url=https%3A%2F%2Fsource.inblog.dev%2Fpost_image%2F2023-12-28T10%3A33%3A56.627Z-89450a65-24dc-463e-8486-98b27b3bb1c3&w=1920&q=75');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .Mycard {
+            width: 1200px;
+            margin: 30px auto 0px auto
+        }
+
+        body {
+            background-color: #212529;
+        }
+
+        .Mypostingbox{
+             width: 500px;
+            margin: 30px auto 0px auto;
+            border: 1px solid white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-floating > input{
+            background-color: transparent;
+            color:white;
+        }
+        .form-floating > label {
+            color: white;
+        }
+
+        .input-group > label {
+            background-color: transparent;
+            color:white;
+        }
+
+        .Mypostingbox > button {
+            width : 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a
+                    href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> <svg
+                        class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-danger">MYFLIX</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">HOME</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">SERIES</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">MOVIE</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">MY CONTENTS</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-danger">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Your Name</h1>
+                <p class="col-md-8 fs-4">It tells the story of two high school students, Mitsuha and Taki, who
+                    inexplicably
+                    begin to swap bodies. As they navigate their unusual experiences, they discover a deeper connection
+                    and
+                    embark on a journey to find each other.
+                </p>
+                <button type="button" class="btn btn-outline-light">Movie Record</button>
+                <button type="button" class="btn btn-outline-light">Detail</button>
+            </div>
+        </div>
+    </div>
+    <div class="Mypostingbox">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Movie image adress</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Movie title</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Stars</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Select</option>
+                <option value="1">⭐️</option>
+                <option value="2">⭐️⭐️</option>
+                <option value="3">⭐️⭐️⭐️</option>
+                <option value="4">⭐️⭐️⭐️⭐️</option>
+                <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+            </select>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Recomended reason</label>
+        </div>
+        <button type="button" class="btn btn-danger">Danger</button>
+
+    </div>
+    <div class="Mycard">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title</h5>
+                        <p class="card-text">⭐️⭐️⭐️⭐️</p>
+
+                        <p class="card-text">Movie coments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title</h5>
+                        <p class="card-text">⭐️⭐️⭐️⭐️</p>
+                        <p class="card-text">Movie coments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title</h5>
+                        <p class="card-text">⭐️⭐️⭐️⭐️</p>
+
+                        <p class="card-text">Movie coments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title</h5>
+                        <p class="card-text">⭐️⭐️⭐️⭐️</p>
+
+                        <p class="card-text">Movie coments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
